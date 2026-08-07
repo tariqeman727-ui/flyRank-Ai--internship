@@ -67,8 +67,26 @@ The baseline acts as a reference point to measure whether the ML approach provid
 
 ## 4. Model / analysis
 
-Your method and why it fits the lane. The exact feature list (and what you left out on
-purpose). The target or proxy definition, in one sentence.
+The project used a Decision Tree model for the Content Refresh Prioritization lane.
+
+The Decision Tree method was selected because it provides an interpretable ML approach that can identify patterns between search performance signals and refresh priority.
+
+Features used:
+- Clicks
+- Impressions
+- CTR
+- Average Position
+
+Features deliberately excluded:
+- trend_direction
+- trend_pct
+- Future performance information
+- Client identifiers
+
+Target definition:
+The target was the Content Refresh Priority Score used to rank webpages that may benefit from content updates.
+
+The model was designed to support content prioritization decisions, not to predict search engine algorithms or guarantee ranking improvements.
 
 ## 5. Evaluation
 

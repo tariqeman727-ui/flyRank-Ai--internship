@@ -128,8 +128,21 @@ The results are directional and should be used as decision-support evidence. The
 
 ## 7. Recommendation
 
-The ranked actions or decisions your output supports, and how a FlyRank editor would use them
-tomorrow. State your confidence and the limits explicitly.
+The model output supports ranked content refresh decisions for content teams.
+
+Recommended actions:
+
+1. Refresh pages with high impressions but low CTR.
+2. Update outdated content that shows declining performance.
+3. Improve titles and meta descriptions to increase click opportunities.
+4. Review keyword alignment and user intent.
+5. Monitor page performance and retrain the approach when new data becomes available.
+
+How a content team can use it:
+A FlyRank editor can review the ranked pages, check the reason codes, and decide which updates are worth applying.
+
+Confidence and limitations:
+The recommendations provide directional decision-support based on observed search signals. Human review is required before making content changes. The model does not guarantee improved rankings or traffic.
 
 ## 8. Reproducibility
 

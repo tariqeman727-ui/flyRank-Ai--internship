@@ -170,7 +170,7 @@ Environment:
 - Main libraries: pandas, scikit-learn, matplotlib.
 
 Random seed:
-The model was trained using a fixed random state to keep results reproducible.
+Random seed: A fixed random state was used during modeling to support reproducibility.
 
 Run process:
 1. Open notebooks in order.

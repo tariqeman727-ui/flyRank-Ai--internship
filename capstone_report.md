@@ -1,9 +1,9 @@
 # Capstone Report — <your lane>
 
-- **Author:** - Author: Eman Tariq
-- **Lane:** -  Content Refresh Prioritization
-- **Repo:** -  https://github.com/tariqeman727-ui/flyRank-Ai--internship
-- **Date:** -  August 2026
+- **Author:** Eman Tariq
+- **Lane:** Content Refresh Prioritization
+- **Repo:** https://github.com/tariqeman727-ui/flyRank-Ai--internship
+- **Date:** August 2026
 
 > Copy this file to `work/capstone_report.md` and fill it in as you build. The eight
 > sections mirror the Pass / Needs-Work rubric axes, so nothing here is optional.

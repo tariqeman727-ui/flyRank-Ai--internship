@@ -10,9 +10,17 @@
 
 ## 1. Problem framing
 
-What decision does this support? Name the unit of analysis (page, client, day…), the output
-(score, rank, cluster, report), the action a human takes from it, and the cost of a wrong
-call. Why does data/ML help here at all?
+This project supports the decision of prioritizing webpages that may benefit from content refresh.
+
+Unit of analysis: One webpage (URL) in one month.
+
+Output: A content refresh priority score and ranked list of pages.
+
+Human action: Content teams can review the ranked pages and decide which pages should be updated.
+
+Cost of a wrong call: Time may be wasted updating pages that do not need changes, or important improvement opportunities may be missed.
+
+Machine learning helps because a large number of webpages cannot be manually reviewed efficiently. The model helps identify patterns in search performance signals and supports faster decision-making.
 
 ## 2. Data safety
 

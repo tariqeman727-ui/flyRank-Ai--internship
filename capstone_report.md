@@ -146,8 +146,36 @@ The recommendations provide directional decision-support based on observed searc
 
 ## 8. Reproducibility
 
-The exact commands to re-run everything from a fresh clone, your random seeds, and your
-environment (`pip freeze` highlights or `requirements.txt` deltas).
+The project can be reproduced by following the notebooks in sequence from the GitHub repository.
+
+Repository:
+https://github.com/tariqeman727-ui/flyRank-Ai--internship
+
+Project notebooks:
+
+- w01_research_question.ipynb
+- w02_ml_task_framing.ipynb
+- w03_data_contract.ipynb
+- w03_feature_leakage_check.ipynb
+- w04_baseline_score.ipynb
+- w04_signal_audit.ipynb
+- w05_model.ipynb
+- w06_validation_audit.ipynb
+- w07_action_playbook.ipynb
+- capstone.ipynb
+
+Environment:
+- Python environment used through Google Colab.
+- Main libraries: pandas, scikit-learn, matplotlib.
+
+Random seed:
+The model was trained using a fixed random state to keep results reproducible.
+
+Run process:
+1. Open notebooks in order.
+2. Run data preparation and feature steps.
+3. Train the baseline and Decision Tree model.
+4. Review evaluation results and exported recommendations.
 
 ---
 

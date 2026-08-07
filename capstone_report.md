@@ -100,7 +100,7 @@ Evaluation approach:
 - Same validation setup for baseline and model comparison
 
 Results:
-The Decision Tree model was compared against the Week 4 baseline using the same evaluation setup.
+Results: Results: The Decision Tree model was compared against the Week 4 baseline using the same evaluation setup.
 
 Error analysis:
 - The model may struggle with pages having mixed performance signals.
@@ -108,6 +108,7 @@ Error analysis:
 - Results should be interpreted as decision-support evidence rather than perfect prediction.
 
 The evaluation shows a structured ML approach for prioritization, while keeping claims directional and honest.
+
 
 ## 6. Interpretation
 

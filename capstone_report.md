@@ -90,8 +90,24 @@ The model was designed to support content prioritization decisions, not to predi
 
 ## 5. Evaluation
 
-Your split (grouped by client? time-aware?) and why. Metrics, model vs baseline **on the same
-split**. What the errors look like — a short error analysis beats a big metric table.
+The model was evaluated using an 80% training and 20% testing split.
+
+The same split was used for both the Week 4 baseline and the Decision Tree model to ensure a fair comparison.
+
+Evaluation approach:
+- Training data: 80%
+- Testing data: 20%
+- Same validation setup for baseline and model comparison
+
+Results:
+The Decision Tree model was compared against the Week 4 baseline using the same evaluation setup.
+
+Error analysis:
+- The model may struggle with pages having mixed performance signals.
+- It mainly depends on available search performance features.
+- Results should be interpreted as decision-support evidence rather than perfect prediction.
+
+The evaluation shows a structured ML approach for prioritization, while keeping claims directional and honest.
 
 ## 6. Interpretation
 

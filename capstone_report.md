@@ -111,8 +111,20 @@ The evaluation shows a structured ML approach for prioritization, while keeping 
 
 ## 6. Interpretation
 
-What the model/clusters actually found. Feature importances or cluster profiles in plain
-words. Surprises and negative results — a well-understood "no effect" is a valid result.
+The model identified patterns in search performance signals that can help prioritize pages for content refresh.
+
+Key observations:
+- Pages with high impressions but lower CTR may represent optimization opportunities.
+- Ranking position and click behavior provide useful signals for prioritization.
+- The Decision Tree model provides a more structured approach compared with a simple rule-based baseline.
+
+Feature interpretation:
+- Clicks indicate current user engagement.
+- Impressions show search visibility opportunities.
+- CTR highlights pages where better titles or descriptions may improve performance.
+- Average Position provides ranking context.
+
+The results are directional and should be used as decision-support evidence. The model does not prove causation or predict search engine ranking algorithms.
 
 ## 7. Recommendation
 

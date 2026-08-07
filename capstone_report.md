@@ -24,10 +24,29 @@ Machine learning helps because a large number of webpages cannot be manually rev
 
 ## 2. Data safety
 
-Which data you used and which columns you deliberately excluded (and why). Leakage risks you
-considered — especially label-derived fields (`trend_direction`, `trend_pct`) and pseudonymous
-IDs (grouping only, never features). Confirm nothing client-identifying appears anywhere in
-`work/`.
+The project used the FlyRank ML Internship Dataset (Hosted Release) with search performance and content-related features.
+
+Used features:
+- Clicks
+- Impressions
+- CTR
+- Average Position
+- Content performance signals
+
+Excluded data:
+- Private client names
+- Private URLs
+- Search queries containing sensitive information
+- Production identifiers
+
+Leakage checks:
+- Future clicks were not used.
+- Future impressions were not used.
+- Future labels or outcomes were not used.
+- Label-derived fields such as trend_direction and trend_pct were not used as model features.
+- Pseudonymous IDs were only used for identification/grouping and not as predictive features.
+
+No client-identifying information was included in the work folder.
 
 ## 3. Baseline
 

@@ -50,8 +50,20 @@ No client-identifying information was included in the work folder.
 
 ## 3. Baseline
 
-The transparent rule or score you built first. Why it's a fair comparison, and its numbers on
-the same data and metric as your model.
+The baseline was a rule-based prioritization score created in Week 4.
+
+The baseline ranked webpages using existing search/content performance signals such as CTR, content age, and performance patterns.
+
+This baseline provides a simple and transparent comparison before applying the machine learning model.
+
+For fair evaluation, the baseline and the Decision Tree model were compared using the same train/test split.
+
+Baseline output:
+- Ranked webpages by refresh priority.
+- Assigned reason codes such as STALE_LOW_CTR.
+- Recommended actions such as Refresh Content.
+
+The baseline acts as a reference point to measure whether the ML approach provides a more structured prioritization method.
 
 ## 4. Model / analysis
 

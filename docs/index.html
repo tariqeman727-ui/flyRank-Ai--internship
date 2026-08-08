@@ -1,1 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Content Refresh Prioritization | Eman Tariq</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background: #f7f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 38px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin: 5px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 25px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
+    }
+
+    .highlight {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card {
+      padding: 15px;
+      margin: 12px 0;
+      background: #f1f1f7;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #eee;
+    }
+
+    a {
+      color: #333;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Content Refresh Prioritization</h1>
+  <p>FlyRank Machine Learning Capstone</p>
+  <p><strong>Eman Tariq</strong></p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Research Question</h2>
+
+    <p class="highlight">
+      Can search performance metrics such as clicks, impressions, CTR,
+      and average position be used to identify webpages that should be
+      prioritized for content refresh?
+    </p>
+
+    <p>
+      The project supports content teams in identifying webpages that
+      may benefit from content updates and prioritizing their work.
+    </p>
+  </section>
+
+  <section>
+    <h2>Dataset</h2>
+
+    <div class="card">
+      <strong>Dataset:</strong> FlyRank ML Internship Dataset
+    </div>
+
+    <div class="card">
+      <strong>Time Window:</strong> March 2026
+    </div>
+
+    <div class="card">
+      <strong>Unit of Analysis:</strong> One webpage (URL) in one month
+    </div>
+
+    <p><strong>Main Features:</strong></p>
+
+    <ul>
+      <li>Clicks</li>
+      <li>Impressions</li>
+      <li>CTR</li>
+      <li>Average Position</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Methodology</h2>
+
+    <p>
+      The project followed an ML workflow including problem framing,
+      data analysis, feature and leakage checks, baseline construction,
+      model training, validation, and action recommendations.
+    </p>
+
+    <p>
+      A Decision Tree model was used because it provides an interpretable
+      approach for identifying patterns in search performance signals.
+    </p>
+
+    <p>
+      Label-derived and future information was excluded to reduce leakage
+      risk.
+    </p>
+  </section>
+
+  <section>
+    <h2>Baseline vs Model</h2>
+
+    <table>
+      <tr>
+        <th>Approach</th>
+        <th>Method</th>
+        <th>Evaluation</th>
+      </tr>
+
+      <tr>
+        <td>Week 4 Baseline</td>
+        <td>
+          Rule-based prioritization using search/content performance
+          signals.
+        </td>
+        <td>Same validation setup</td>
+      </tr>
+
+      <tr>
+        <td>Decision Tree Model</td>
+        <td>
+          ML-based prioritization using search performance features.
+        </td>
+        <td>80% training / 20% testing</td>
+      </tr>
+    </table>
+
+    <p>
+      The baseline and model were compared using the same evaluation
+      setup to support a fair comparison.
+    </p>
+  </section>
+
+  <section>
+    <h2>Key Findings</h2>
+
+    <ul>
+      <li>
+        Pages with high impressions but low CTR may represent
+        content optimization opportunities.
+      </li>
+
+      <li>
+        Average position provides useful ranking context for
+        prioritization.
+      </li>
+
+      <li>
+        Search performance signals can support structured content
+        refresh decisions.
+      </li>
+
+      <li>
+        The results are directional and should be treated as
+        decision-support evidence.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Ranked Recommendations</h2>
+
+    <ol>
+      <li>Refresh pages with high impressions but low CTR.</li>
+
+      <li>
+        Update outdated content that shows declining performance.
+      </li>
+
+      <li>
+        Improve titles and meta descriptions to increase click
+        opportunities.
+      </li>
+
+      <li>
+        Review keyword alignment and user intent.
+      </li>
+
+      <li>
+        Monitor performance and retrain the approach when new data
+        becomes available.
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Human Review & Limitations</h2>
+
+    <p>
+      Recommendations should be reviewed by a human before content
+      changes are made.
+    </p>
+
+    <ul>
+      <li>The model does not guarantee improved rankings.</li>
+      <li>The model does not predict Google's search algorithm.</li>
+      <li>Results depend on the available dataset.</li>
+      <li>Additional content-quality signals could improve future work.</li>
+      <li>The project was evaluated on internship data, not production data.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Reproducibility</h2>
+
+    <p>
+      The project notebooks and capstone report are available in the
+      GitHub repository.
+    </p>
+
+    <p>
+      <a href="https://github.com/tariqeman727-ui/flyRank-Ai--internship"
+         target="_blank">
+        View GitHub Repository
+      </a>
+    </p>
+
+    <p>
+      Main project notebooks include research question, task framing,
+      data contract, baseline, model, validation, action playbook,
+      and capstone.
+    </p>
+  </section>
+
+  <section>
+    <h2>Acknowledgments</h2>
+
+    <p>
+      This research project was completed as part of the
+      <strong>FlyRank Machine Learning Internship</strong>.
+    </p>
+
+    <p>
+      Special thanks to the FlyRank team for providing the educational
+      dataset and internship program.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>FlyRank ML Capstone · Content Refresh Prioritization</p>
+  <p>Eman Tariq · 2026</p>
+</footer>
+
+</body>
+</html>
